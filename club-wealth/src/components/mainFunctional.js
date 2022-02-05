@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import user from "../APIs/user";
-import cats from "../APIs/cats";
 import countries from "../APIs/countries";
-import covid from "../APIs/covid";
-import spaceX from "../APIs/spaceX";
 
 function MainFunctional() {
   const [data, setData] = useState([]);
@@ -18,9 +15,9 @@ function MainFunctional() {
     // cats.getRandomCat().then((response) => {
     //   console.log("got random cat: ", response);
     // });
-    // countries.getCountries().then((response) => {
-    //   console.log("got countries", response);
-    // });
+    countries.getCountries().then((response) => {
+      console.log("got countries", response);
+    });
     // covid.getCurrentCovidStats().then((response) => {
     //   console.log("got covid", response);
     // });

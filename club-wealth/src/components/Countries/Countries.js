@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  ListGroup,
-  ListGroupItem
-} from "react-bootstrap";
+import {Container,Row,Col,Card,ListGroup, ListGroupItem,} from "react-bootstrap";
 import "./Countries.css";
 
 function Countries({ countriesData }) {
@@ -34,7 +27,7 @@ function Countries({ countriesData }) {
 
   return (
     <>
-      <div className="form-floating mx-auto w-75 mb-3">
+      <div className="form-floating  mb-3">
         <input
           id="search"
           type="search"

@@ -7,7 +7,7 @@ const countries = {
   getCountries: (cityName) => {
     return new Promise((resolve, reject) => {
       axios
-        .get("https://restcountries.eu/rest/v2")
+      .get("https://restcountries.com/v2/all")
         .then((response) => {
           resolve(response);
         })
